@@ -5,6 +5,7 @@ const Home = lazy(() => import("../Home"));
 const Experience = lazy(() => import("../Experience"));
 const Bio = lazy(() => import("../Bio"));
 const TechStack = lazy(() => import("../TechStack"));
+const Contact = lazy(() => import("../Contact"));
 const ErrorNotFound = lazy(() => import("../Errors/ErrorNotFound"));
 
 const RouterItem = () => {
@@ -14,6 +15,7 @@ const RouterItem = () => {
       <Route path="/exp" component={Experience} />
       <Route path="/bio" component={Bio} />
       <Route path="/techStack" component={TechStack} />
+      <Route path="/contact" component={Contact} />
       <Route component={ErrorNotFound} />
     </Switch>
   );
